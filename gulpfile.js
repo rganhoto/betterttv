@@ -140,3 +140,4 @@ const devServer = () => {
 exports.default = build;
 exports.dist = series(build, dist);
 exports.watch = parallel(devServer, build);
+exports.server = devServer

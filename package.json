@@ -23,6 +23,7 @@
     "del": "^6.0.0",
     "emoji-toolkit": "^6.5.1",
     "envify": "^4.1.0",
+    "eslint": "^6.8.0",
     "git-rev-sync": "^3.0.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",

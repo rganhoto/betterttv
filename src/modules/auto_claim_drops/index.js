@@ -1,7 +1,7 @@
 const settings = require('../../settings');
 const domObserver = require('../../observers/dom');
 
-const CLAIM_BUTTON_SELECTOR = '.ScCoreButtonLabel-lh1yxp-0';
+const CLAIM_BUTTON_SELECTOR = '.chat-private-callout__header-segment';
 
 let removeCampaignDropsListener;
 
@@ -27,8 +27,9 @@ class ChannelDrops {
                 CLAIM_BUTTON_SELECTOR,
                 (node, isConnected) => {
                     if (!isConnected) return;
-                    if (node.innerText === 'Claim') {
-                        node.click();
+                    const button = node.getElementsByClassName('Lja-dZ');
+                    if (button) {
+                        button.click();
                     }
                 }
             );
