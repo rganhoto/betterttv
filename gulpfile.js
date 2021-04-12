@@ -23,8 +23,8 @@ const tar = require('gulp-tar');
 const uglify = require('gulp-uglify');
 const jsonTransform = require('gulp-json-transform');
 
-process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-const IS_PROD = process.env.NODE_ENV === 'production';
+process.env.NODE_ENV = 'development'; //process.env.NODE_ENV || 'development';
+const IS_PROD = false; //process.env.NODE_ENV === 'production';
 
 process.env.DEV_CDN_PORT = 2888;
 process.env.DEV_CDN_ENDPOINT = `http://127.0.0.1:${process.env.DEV_CDN_PORT}/`;
